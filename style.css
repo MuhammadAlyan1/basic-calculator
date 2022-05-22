@@ -1,0 +1,182 @@
+:root {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #eee;
+}
+/*  
+====================
+calculator-container
+====================
+*/
+
+.calculator-container {
+  margin-top: 5rem;
+  max-width: 400px;
+  margin-inline: auto;
+  border-radius: 20px;
+}
+
+/*  
+====================
+calculatorDisplay
+====================
+*/
+
+/*  
+====================
+display-div
+====================
+*/
+
+.display-div h1 {
+  margin: 0px;
+  height: 40px;
+  text-align: right;
+  padding: 0.5rem 1rem;
+  background-color: #c837ba;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+/*  
+====================
+operators
+====================
+*/
+.operators {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*  
+====================
+numbers
+====================
+*/
+.numbers {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*  
+====================
+ac
+====================
+*/
+#ac {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*  
+====================
+equal
+====================
+*/
+#equal {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/*  
+====================
+button-div
+====================
+*/
+
+.button-div button {
+  border: none;
+  border-radius: 5px;
+  background-color: #8e37c8;
+  color: white;
+}
+
+.button-div {
+  display: grid;
+  grid-template-areas: "ac ";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 45px);
+  grid-template-areas:
+    "seven eigth nine addition"
+    "four five six substraction"
+    "one two three multiplication"
+    "zero ac equal division";
+  gap: 2px;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#addition {
+  grid-area: addition;
+}
+
+#substraction {
+  grid-area: substraction;
+}
+
+#multiplication {
+  grid-area: multiplication;
+}
+
+#division {
+  grid-area: division;
+}
+
+#ac {
+  grid-area: ac;
+}
+
+#equal {
+  grid-area: equal;
+}
+
+.selected.selected {
+  background-color: #54ab86;
+}
